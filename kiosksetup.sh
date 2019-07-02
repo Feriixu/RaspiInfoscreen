@@ -1,3 +1,4 @@
+#!/bin/bash
 sudo apt-get purge wolfram-engine -y
 sudo apt-get purge scratch -y
 sudo apt-get purge scratch2 -y
