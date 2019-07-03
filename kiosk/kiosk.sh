@@ -1,6 +1,8 @@
 #!/bin/bash
 sitePresentation=""
 sitePersonio=""
+personioScrollAmount=10
+presentationDuration=25
 
 # Disable screen timeout
 xset s noblank
@@ -26,22 +28,6 @@ sleep 20;
 # move mouse to corner to prevent pop ups on website
 xdotool mousemove 0 0
 
-# Loop
-while true; do
-        #Show presentation
-        sleep 25;
-
-        #Change to personio
-        xdotool key ctrl+Tab;
-        #Reload Personio
-        xdotool key F5;
-        #Wait for website
-        sleep 4;
-        #Move down
-        for n in {1..20}; do
-                xdotool key Down;
-                sleep 2;
-done
 #Wait a little
 sleep 20;
 
@@ -51,16 +37,16 @@ xdotool mousemove 0 0
 # Loop
 while true; do
         #Show presentation
-        sleep 25;
+        sleep $presentationDuration;
 
         #Change to personio
         xdotool key ctrl+Tab;
         #Reload Personio
         xdotool key F5;
         #Wait for website
-        sleep 4;
+        sleep 5;
         #Move down
-        for n in {1..20}; do
+        for n in {1..$personioScrollAmount}; do
                 xdotool key Down;
                 sleep 2;
         done
