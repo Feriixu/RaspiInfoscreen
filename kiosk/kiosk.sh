@@ -45,10 +45,12 @@ while true; do
         xdotool key F5;
         #Wait for website
         sleep 5;
-        #Move down
+		xdotool key End
+		sleep 10
+        #Move up
         for (( c=0; c<=$personioScrollAmount; c++ ))
 		do
-                xdotool key Down;
+                xdotool key Up;
                 sleep 2;
         done
         #Wait a little
