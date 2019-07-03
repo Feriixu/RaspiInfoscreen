@@ -1,4 +1,5 @@
 #!/bin/bash
+./kiosksettings.config
 # Disable screen timeout
 xset s noblank
 xset s off
@@ -39,16 +40,17 @@ while true; do
         #Reload Personio
         xdotool key F5;
         #Wait for website
-        sleep 10;
+        sleep 7;
 		xdotool key End
-		sleep 5
+		sleep $personioInitialDelay;
         #Move up
         for (( c=0; c<=$personioScrollAmount; c++ ))
 		do
                 xdotool key Up;
-                sleep 2;
+                sleep $personioScrollDelay;
         done
-
+		sleep $personioEndDelay;
+		
         #Change back to presentation
         xdotool key ctrl+Tab;
         #Reload presentation
