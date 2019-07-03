@@ -33,6 +33,19 @@ Tested on Raspberry Pi 3 B+
 10. Done!
 Log in via SSH and run enable_kiosk.sh / disable_kiosk.sh for enabling and disabling. (Kiosk is enabled by default after setup)
 
+## How to connect via SSH
+1. Download and install Putty
+2. Create Shortcut on desktop -> `putty.exe pi@<IP of the raspi> -pw <password>`
+3. Double click the Shortcut to connect
+
+## How to adjust settings
+1. Log in via SSH (double click the shortcut you created)
+2. Run `$ sudo nano /home/pi/kiosksettings.config` to edit the config file
+3. Edit values *(Tip: You cant use CTRL+V to paste, ues Right-Click instead)*
+4. Press **CTRL+S** to save
+5. Press **CTRL+X** to exit
+6. Reboot the raspi for the changes to take effect -> `$ sudo reboot` 
+
 ## Contact
 For questions please send an email to:
 
