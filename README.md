@@ -30,7 +30,7 @@ Tested on Raspberry Pi 3 B+
 8. Open Chromium browser and log in to personio
 9. Reboot with `$ sudo reboot`
 10. Done!
-
+---
 ## How to connect via SSH
 1. Download and install [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html "Putty Download")
 2. Create Shortcut on desktop -> `putty.exe pi@<IP of the raspi> -pw <password>`
@@ -49,7 +49,7 @@ Tested on Raspberry Pi 3 B+
 4. Press **CTRL+S** to save
 5. Press **CTRL+X** to exit
 6. Reboot the raspi for the changes to take effect -> `$ sudo reboot` 
-
+---
 ## Contact
 For questions please send an email to:
 
