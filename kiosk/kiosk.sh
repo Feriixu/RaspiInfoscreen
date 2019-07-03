@@ -44,17 +44,15 @@ while true; do
         #Reload Personio
         xdotool key F5;
         #Wait for website
-        sleep 5;
+        sleep 10;
 		xdotool key End
-		sleep 10
+		sleep 5
         #Move up
         for (( c=0; c<=$personioScrollAmount; c++ ))
 		do
                 xdotool key Up;
                 sleep 2;
         done
-        #Wait a little
-        sleep 5
 
         #Change back to presentation
         xdotool key ctrl+Tab;
