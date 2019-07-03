@@ -12,31 +12,35 @@ Tested on Raspberry Pi 3 B+
 * Optional: Case
 ## Installation / Setup
 1. Enable SSH (for later enabling and disabling of  the kiosk script)
-`sudo raspi-config`
+`$ sudo raspi-config`
 `Interfacing options -> SSH -> Enable`
 2. Setup network connection
 3. Clone Repository
-`git clone https://github.com/RaspiInfoscreen`
+`$ git clone https://github.com/RaspiInfoscreen`
 5. Copy all files from /kiosk to /home/pi
-`cp RaspiInfoscreen/kiosk/* /home/pi`
+`$ cp RaspiInfoscreen/kiosk/* /home/pi`
 6. Make the scripts executable
-`sudo chmod +x /home/pi/*kiosk*`
+`$ sudo chmod +x /home/pi/*kiosk*`
 6. Run kiosk_setup.sh
-`sudo /home/pi/kiosksetup.sh`
+`$ sudo /home/pi/kiosksetup.sh`
 7. Edit kiosk.sh and enter the URL’s for Presentation and Personio
-`sudo nano /home/pi/kiosk.sh`
+`$ sudo nano /home/pi/kiosk.sh`
 `Enter the URL's`
 `CTRL+X -> Y -> Enter`
 8. Open Chromium browser and log in to personio
-9. Reboot
-`sudo reboot`
+9. Reboot with `$ sudo reboot`
 10. Done!
-Log in via SSH and run enable_kiosk.sh / disable_kiosk.sh for enabling and disabling. (Kiosk is enabled by default after setup)
 
 ## How to connect via SSH
 1. Download and install Putty
 2. Create Shortcut on desktop -> `putty.exe pi@<IP of the raspi> -pw <password>`
 3. Double click the Shortcut to connect
+
+## How to dis-/enable the kiosk
+1. Log in via SSH (double click the shortcut you created)
+* Run `$ ./enable_kiosk.sh` to **enable**
+* Run `$ ./disable_kiosk.sh`to **disable**
+3. Reboot the raspi with `$ sudo reboot`
 
 ## How to adjust settings
 1. Log in via SSH (double click the shortcut you created)
