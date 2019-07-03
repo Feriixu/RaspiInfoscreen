@@ -21,5 +21,6 @@ Log in via SSH and run enable_kiosk.sh / disable_kiosk.sh for enabling and disab
 
 ## Contact
 For questions please send an email to:
+
 Felix Stoltenberg
 felix.elias.stoltenberg@gmail.com
