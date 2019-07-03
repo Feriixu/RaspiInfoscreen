@@ -12,7 +12,7 @@ Made for IOX in the scope of an internship.
 ## Installation / Setup
 1. Enable SSH (for later enabling and disabling of  the kiosk script)
 2. Setup network connection
-3. Copy all files to /home/pi
+3. Copy all files from /kiosk to /home/pi
 4. Run kiosk_setup.sh
 5. Edit kiosk.sh and enter the URL’s for Presentation and Personio
 6. Reboot
