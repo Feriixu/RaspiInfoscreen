@@ -1,7 +1,7 @@
 # RaspiInfoscreen
 Simple Infoscreen. Displays a Google presentation and personio calendar by default.
 Made for IOX in the scope of an internship.
-Tested on Raspberry Pi 3 V1.2
+Tested on Raspberry Pi 3 B+
 ## Requirements
 * Raspberry Pi with Raspian Full (preferably; not tested with other dists)
 * Micro SD Card
