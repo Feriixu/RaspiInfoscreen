@@ -27,9 +27,10 @@ Tested on Raspberry Pi 3 B+
 `sudo nano /home/pi/kiosk.sh`
 `Enter the URL's`
 `CTRL+X -> Y -> Enter`
-8. Reboot
+8. Open Chromium browser and log in to personio
+9. Reboot
 `sudo reboot`
-9. Done!
+10. Done!
 Log in via SSH and run enable_kiosk.sh / disable_kiosk.sh for enabling and disabling. (Kiosk is enabled by default after setup)
 
 ## Contact
