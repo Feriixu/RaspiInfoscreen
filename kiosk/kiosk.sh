@@ -1,5 +1,5 @@
 #!/bin/bash
-./kiosksettings.config
+. /kiosksettings.config
 # Disable screen timeout
 xset s noblank
 xset s off
