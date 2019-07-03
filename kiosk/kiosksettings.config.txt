@@ -1,0 +1,4 @@
+sitePresentation=""
+sitePersonio=""
+personioScrollAmount=10
+presentationDuration=25

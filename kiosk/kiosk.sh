@@ -1,9 +1,4 @@
 #!/bin/bash
-sitePresentation=""
-sitePersonio=""
-personioScrollAmount=10
-presentationDuration=25
-
 # Disable screen timeout
 xset s noblank
 xset s off
