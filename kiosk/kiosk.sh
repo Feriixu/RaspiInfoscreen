@@ -46,7 +46,8 @@ while true; do
         #Wait for website
         sleep 5;
         #Move down
-        for n in {1..$personioScrollAmount}; do
+        for (( c=0; c<=$personioScrollAmount; c++ ))
+		do
                 xdotool key Down;
                 sleep 2;
         done
