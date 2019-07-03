@@ -41,7 +41,7 @@ Log in via SSH and run enable_kiosk.sh / disable_kiosk.sh for enabling and disab
 ## How to adjust settings
 1. Log in via SSH (double click the shortcut you created)
 2. Run `$ sudo nano /home/pi/kiosksettings.config` to edit the config file
-3. Edit values *(Tip: You cant use CTRL+V to paste, ues Right-Click instead)*
+3. Edit values *(Tip: You cant use CTRL+V to paste, use Right-Click instead)*
 4. Press **CTRL+S** to save
 5. Press **CTRL+X** to exit
 6. Reboot the raspi for the changes to take effect -> `$ sudo reboot` 
