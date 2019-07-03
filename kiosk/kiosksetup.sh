@@ -13,5 +13,8 @@ sudo apt-get clean
 sudo apt-get autoremove -y
 sudo apt-get update
 sudo apt-get upgrade -y
-sudo apt-get install xdotool unclutter crontab sed -y
+sudo apt-get install xdotool -y
+sudo apt-get install unclutter -y
+sudo apt-get install crontab -y
+sudo apt-get install sed -y
 ./enable_kiosk.sh
