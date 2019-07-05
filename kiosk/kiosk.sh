@@ -16,19 +16,27 @@ sed -i 's/"exit_type":"Crashed"/"exit_type":"Normal"/' /home/pi/.config/chromium
 sleep 10
 
 # Launch chromium
-/usr/bin/chromium-browser --noerrdialogs --disable-infobars --no-sandbox --start-fullscreen $sitePresentation $sitePersonio &
+/usr/bin/chromium-browser --noerrdialogs --disable-infobars --no-sandbox --start-fullscreen $sitePersonio $sitePresentation&
+
+# move mouse to corner to prevent pop ups on website
+xdotool mousemove 0 0
 
 # Wait for browser to start up
-sleep 20;
+sleep 20
 
-# move mouse to corner to prevent pop ups on website
-xdotool mousemove 0 0
-
-#Wait a little
-sleep 20;
-
-# move mouse to corner to prevent pop ups on website
-xdotool mousemove 0 0
+#login
+xdotool key Enter
+sleep 10
+xdotool key Tab
+sleep 1
+xdotool key Tab
+sleep 1
+xdotool key Tab
+sleep 1
+xdotool key Enter
+sleep 1
+#change back to presentation
+xdotool key ctrl+Tab
 
 # Loop
 while true; do
